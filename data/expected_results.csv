@@ -1,0 +1,10 @@
+run_order,file,vendor_id,invoice_number,invoice_total,matched_po,expected_decision,key_reason
+1,01_happy_sahyadri_steel.pdf,V001,SST/26-27/0318,472000,PO-2026-0101,APPROVE,Exact match to PO; PO now fully consumed
+2,02_happy_tolerance_meridian.pdf,V005,MOS-2026-1187,132868,PO-2026-0106,APPROVE,Over PO by 1888 (1.44%) - within 2% / 10000 tolerance; courier line not on PO noted
+3,03_split_brightline_part1.pdf,V002,BL/INV/2026/0811,236000,PO-2026-0102,APPROVE,Partial invoice; remaining balance 354000
+4,04_split_brightline_part2.pdf,V002,BL/INV/2026/0857,236000,PO-2026-0102,APPROVE,Partial invoice; remaining balance 118000
+5,05_split_brightline_part3.pdf,V002,BL/INV/2026/0902,165200,PO-2026-0102,HOLD,Exceeds remaining balance 118000 by 47200; 21 trips billed vs 20 ordered; detention not on PO
+6,06_dup_deccan_original.pdf,V003,INV-0042,126260,PO-2026-0103,APPROVE,Exact match to PO
+7,07_dup_deccan_resubmit.pdf,V003,42,126260,-,REJECT,Duplicate of INV-0042 (normalised number 42; same vendor; only the date differs). Remaining checks skipped by design: PO not evaluated
+8,08_scanned_orbit_no_po.pdf,V004,OITS/KA/26-27/2291,188800,PO-2026-0104 (inferred),NEEDS_REVIEW,No PO reference; scanned; tax embedded. Best match PO-2026-0104 (exact total + line similarity) vs PO-2026-0105
+9,09_bank_change_sahyadri.pdf,V001,SST/26-27/0341,295000,PO-2026-0108,HOLD,Matches PO exactly BUT bank account ends 8820 vs vendor master 4417; sender email domain sahyadri-steel.in vs sahyadristeel.in; invoice says bank details changed. Verify by phone using master contact before any payment

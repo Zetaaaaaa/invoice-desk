@@ -1,0 +1,123 @@
+{
+  "document": {
+    "document_type": "tax_invoice",
+    "document_quality": "digital",
+    "multiple_invoices_detected": false,
+    "annotations": []
+  },
+  "vendor": {
+    "name": {
+      "value": "Sahyadri Steel Traders",
+      "confidence": 0.98,
+      "evidence": "Sahyadri Steel Traders"
+    },
+    "gstin": {
+      "value": "27AAHFS5521K1ZQ",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAHFS5521K1ZQ"
+    },
+    "email": {
+      "value": "accounts@sahyadri-steel.in",
+      "confidence": 0.98,
+      "evidence": "accounts@sahyadri-steel.in"
+    },
+    "address": "Gat No. 112, Chakan Industrial Area, Pune, Maharashtra 410501"
+  },
+  "buyer": {
+    "name": {
+      "value": "Kestrel Components Pvt Ltd",
+      "confidence": 0.98,
+      "evidence": "Kestrel Components Pvt Ltd"
+    },
+    "gstin": {
+      "value": "27AAKCK4821M1Z3",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAKCK4821M1Z3"
+    }
+  },
+  "invoice": {
+    "number": {
+      "value": "SST/26-27/0341",
+      "confidence": 0.98,
+      "evidence": "SST/26-27/0341"
+    },
+    "date": {
+      "value": "2026-09-28",
+      "confidence": 0.98,
+      "evidence": "28-Sep-2026"
+    },
+    "due_date": "2026-11-12",
+    "po_reference": {
+      "value": "PO-2026-0108",
+      "confidence": 0.98,
+      "evidence": "PO No:: PO-2026-0108"
+    },
+    "other_references": [],
+    "currency": {
+      "value": "INR",
+      "confidence": 0.98,
+      "evidence": "₹"
+    }
+  },
+  "lines": [
+    {
+      "description": "MS plate 10mm IS2062 E250",
+      "hsn_sac": "7208",
+      "quantity": 10,
+      "uom": "MT",
+      "unit_price": 25000.0,
+      "line_amount": 250000.0,
+      "confidence": 0.97
+    }
+  ],
+  "tax": {
+    "treatment": "separate",
+    "inclusive_statement": null,
+    "tax_lines": [
+      {
+        "tax_type": "CGST",
+        "rate_pct": 9.0,
+        "amount": 22500.0
+      },
+      {
+        "tax_type": "SGST",
+        "rate_pct": 9.0,
+        "amount": 22500.0
+      }
+    ]
+  },
+  "totals": {
+    "subtotal": {
+      "value": 250000.0,
+      "confidence": 0.98,
+      "evidence": "Sub Total 2,50,000.00"
+    },
+    "total": {
+      "value": 295000.0,
+      "confidence": 0.98,
+      "evidence": "₹ 2,95,000.00"
+    },
+    "total_in_words": "Rupees Two Lakh Ninety Five Thousand Only"
+  },
+  "bank": {
+    "bank_name": {
+      "value": "Kotak Mahindra Bank, Andheri East Branch",
+      "confidence": 0.98,
+      "evidence": "Kotak Mahindra Bank, Andheri East Branch"
+    },
+    "account_number": {
+      "value": "7412093658820",
+      "confidence": 0.98,
+      "evidence": "A/c No: 7412093658820"
+    },
+    "ifsc": {
+      "value": "KKBK0000631",
+      "confidence": 0.98,
+      "evidence": "IFSC: KKBK0000631"
+    },
+    "change_notice": {
+      "detected": true,
+      "evidence": "IMPORTANT: Our bank details have changed with effect from 01-Sep-2026."
+    }
+  }
+}

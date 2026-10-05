@@ -1,0 +1,9 @@
+po_number,vendor_id,po_date,description,currency,subtotal,tax_type,tax_rate_pct,tax_amount,total,status,requester,cost_center
+PO-2026-0101,V001,2026-08-20,Structural steel for Line 3 expansion,INR,400000,CGST+SGST,18,72000,472000,open,Rahul Deshmukh,CC-PROD-03
+PO-2026-0102,V002,2026-08-25,Q3 outbound freight contract Pune to Chennai (20 FTL trips),INR,500000,CGST+SGST,18,90000,590000,open,Priya Kulkarni,CC-LOG-01
+PO-2026-0103,V003,2026-09-02,Packaging materials for September dispatches,INR,107000,CGST+SGST,18,19260,126260,open,Amit Joshi,CC-WH-02
+PO-2026-0104,V004,2026-09-05,Laptop AMC FY26-27 and network security audit,INR,160000,IGST,18,28800,188800,open,Sandeep Rao,CC-IT-01
+PO-2026-0105,V004,2026-09-08,Microsoft 365 Business licences (60 seats),INR,117000,IGST,18,21060,138060,open,Sandeep Rao,CC-IT-01
+PO-2026-0106,V005,2026-09-10,Office consumables for Q3,INR,111000,CGST+SGST,18,19980,130980,open,Neha Patil,CC-ADM-01
+PO-2026-0107,V006,2026-07-15,Carbide cutting inserts,INR,85000,IGST,18,15300,100300,closed,Rahul Deshmukh,CC-PROD-03
+PO-2026-0108,V001,2026-09-14,MS plates for fabrication bay,INR,250000,CGST+SGST,18,45000,295000,open,Rahul Deshmukh,CC-PROD-03

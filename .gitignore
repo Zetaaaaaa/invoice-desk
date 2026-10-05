@@ -1,0 +1,9 @@
+.streamlit/secrets.toml
+.env
+.cache/
+ap_demo.db
+__pycache__/
+*.pyc
+DEMO_GUIDE.txt
+VIDEO_SCRIPT.md
+DEPLOY.md

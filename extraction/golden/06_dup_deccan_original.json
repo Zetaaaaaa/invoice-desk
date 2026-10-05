@@ -1,0 +1,132 @@
+{
+  "document": {
+    "document_type": "tax_invoice",
+    "document_quality": "digital",
+    "multiple_invoices_detected": false,
+    "annotations": []
+  },
+  "vendor": {
+    "name": {
+      "value": "Deccan Packaging Solutions",
+      "confidence": 0.98,
+      "evidence": "Deccan Packaging Solutions"
+    },
+    "gstin": {
+      "value": "27AAMFD2290L1Z8",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAMFD2290L1Z8"
+    },
+    "email": {
+      "value": "accounts@deccanpack.in",
+      "confidence": 0.98,
+      "evidence": "accounts@deccanpack.in"
+    },
+    "address": "S. No. 41, Pirangut MIDC, Pune, Maharashtra 412115"
+  },
+  "buyer": {
+    "name": {
+      "value": "Kestrel Components Pvt Ltd",
+      "confidence": 0.98,
+      "evidence": "Kestrel Components Pvt Ltd"
+    },
+    "gstin": {
+      "value": "27AAKCK4821M1Z3",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAKCK4821M1Z3"
+    }
+  },
+  "invoice": {
+    "number": {
+      "value": "INV-0042",
+      "confidence": 0.98,
+      "evidence": "INV-0042"
+    },
+    "date": {
+      "value": "2026-09-12",
+      "confidence": 0.98,
+      "evidence": "12-Sep-2026"
+    },
+    "due_date": "2026-10-12",
+    "po_reference": {
+      "value": "PO-2026-0103",
+      "confidence": 0.98,
+      "evidence": "PO Ref:: PO-2026-0103"
+    },
+    "other_references": [],
+    "currency": {
+      "value": "INR",
+      "confidence": 0.98,
+      "evidence": "₹"
+    }
+  },
+  "lines": [
+    {
+      "description": "Corrugated boxes 5-ply 600x400x400mm",
+      "hsn_sac": "4819",
+      "quantity": 2000,
+      "uom": "Nos",
+      "unit_price": 38.0,
+      "line_amount": 76000.0,
+      "confidence": 0.97
+    },
+    {
+      "description": "Stretch wrap film 500mm x 23 micron",
+      "hsn_sac": "3920",
+      "quantity": 50,
+      "uom": "Roll",
+      "unit_price": 620.0,
+      "line_amount": 31000.0,
+      "confidence": 0.97
+    }
+  ],
+  "tax": {
+    "treatment": "separate",
+    "inclusive_statement": null,
+    "tax_lines": [
+      {
+        "tax_type": "CGST",
+        "rate_pct": 9.0,
+        "amount": 9630.0
+      },
+      {
+        "tax_type": "SGST",
+        "rate_pct": 9.0,
+        "amount": 9630.0
+      }
+    ]
+  },
+  "totals": {
+    "subtotal": {
+      "value": 107000.0,
+      "confidence": 0.98,
+      "evidence": "Sub Total 1,07,000.00"
+    },
+    "total": {
+      "value": 126260.0,
+      "confidence": 0.98,
+      "evidence": "₹ 1,26,260.00"
+    },
+    "total_in_words": "Rupees One Lakh Twenty Six Thousand Two Hundred Sixty Only"
+  },
+  "bank": {
+    "bank_name": {
+      "value": "Saraswat Co-op Bank, Paud Road",
+      "confidence": 0.98,
+      "evidence": "Saraswat Co-op Bank, Paud Road"
+    },
+    "account_number": {
+      "value": "110200101012268",
+      "confidence": 0.98,
+      "evidence": "A/c No: 110200101012268"
+    },
+    "ifsc": {
+      "value": "SRCB0000089",
+      "confidence": 0.98,
+      "evidence": "IFSC: SRCB0000089"
+    },
+    "change_notice": {
+      "detected": false,
+      "evidence": null
+    }
+  }
+}

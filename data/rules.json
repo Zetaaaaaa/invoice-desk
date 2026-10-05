@@ -1,0 +1,110 @@
+{
+  "buyer": {
+    "name": "Kestrel Components Pvt Ltd",
+    "gstin": "27AAKCK4821M1Z3",
+    "state": "Maharashtra"
+  },
+  "currency": "INR",
+  "matching": {
+    "price_tolerance_pct": 2.0,
+    "price_tolerance_max_abs": 10000,
+    "tolerance_rule": "Invoice total may exceed the PO's remaining balance by the LOWER of 2% or INR 10,000. Anything over is a Hold.",
+    "allow_partial_invoicing": true,
+    "po_must_be_open": true
+  },
+  "duplicate_detection": {
+    "lookback_days": 90,
+    "normalise_invoice_number": "Strip prefixes, separators and leading zeros before comparing (INV-0042 == 42)",
+    "amount_match_pct": 0.5,
+    "rule": "Same vendor + normalised invoice number match = duplicate. Same vendor + same PO + total within 0.5% = probable duplicate."
+  },
+  "extraction": {
+    "min_field_confidence": 0.85,
+    "required_fields": [
+      "vendor_name",
+      "invoice_number",
+      "invoice_date",
+      "total_amount"
+    ],
+    "arithmetic_check": "Sum of line items must equal subtotal, and subtotal + tax must equal total, within INR 1",
+    "accepted_document_types": [
+      "tax_invoice"
+    ],
+    "non_invoice_handling": "proforma, quotation, challan, statement, purchase_order -> NEEDS_REVIEW with reason 'not a tax invoice'. credit_note/debit_note -> NEEDS_REVIEW (not auto-paid)",
+    "inclusive_tax_handling": "If tax.treatment == 'inclusive' and a rate is stated: taxable = total / (1 + rate/100); tax = total - taxable. Done in code, never by the model.",
+    "multiple_invoices_detected": "NEEDS_REVIEW",
+    "arithmetic_tolerance_inr": 1.0,
+    "confidence_checked_fields": [
+      "vendor.gstin",
+      "vendor.name",
+      "invoice.number",
+      "invoice.date",
+      "totals.total",
+      "invoice.po_reference (if present)",
+      "bank.account_number (if present)"
+    ]
+  },
+  "po_inference": {
+    "enabled": true,
+    "signals": [
+      "vendor match",
+      "total within tolerance of an open PO",
+      "line description similarity"
+    ],
+    "rule": "If no PO reference is found, suggest the best-scoring open PO for that vendor but never auto-approve. Route to Needs Review with the score.",
+    "min_score": 0.6,
+    "ambiguity_margin": 0.1,
+    "weights": {
+      "amount": 0.5,
+      "hsn": 0.3,
+      "description": 0.2
+    }
+  },
+  "decisions": {
+    "APPROVE": "All checks pass. Ready for payment scheduling.",
+    "NEEDS_REVIEW": "Process is uncertain (low confidence, inferred PO, small anomaly). A human confirms.",
+    "HOLD": "A business rule failed but the invoice may be valid (over PO balance, PO closed). Needs action from requester or vendor.",
+    "REJECT": "Must not be paid (duplicate, blocked or unknown vendor)."
+  },
+  "vendor_verification": {
+    "bank_account": {
+      "compare": "last 4 digits of extracted account vs vendors.bank_account_last4",
+      "on_mismatch": "HOLD",
+      "required_action": "Call the vendor on the phone number in the vendor master (never the one on the invoice) and confirm the change before any payment",
+      "escalate_if_change_notice_detected": true
+    },
+    "email_domain": {
+      "compare": "domain of extracted vendor email vs domain of vendors.contact_email",
+      "on_mismatch": "NEEDS_REVIEW alone; part of the HOLD narrative when the bank account also mismatches"
+    },
+    "gstin": {
+      "compare": "extracted vendor GSTIN vs vendors.gstin. Trust the GSTIN over the name.",
+      "on_mismatch": "REJECT if the GSTIN matches no vendor; HOLD if it matches a different vendor than the name suggests"
+    }
+  },
+  "vendor_matching": {
+    "name_match_min": 0.6,
+    "lookalike_min": 0.75,
+    "name_only_min": 0.85,
+    "note": "Similarity is 0-1 on legal-suffix-stripped names and aliases. GSTIN is trusted over name."
+  },
+  "line_matching": {
+    "price_tolerance_pct": 2.0,
+    "min_similarity_without_hsn": 0.75,
+    "rule": "Invoice lines are matched to PO lines by HSN/SAC (unique) or best description similarity. Cumulative billed quantity may not exceed the PO quantity. Unit price (ex-tax) must be within tolerance. Lines not on the PO are noted but do not decide alone."
+  },
+  "compliance": {
+    "buyer_gstin_must_match": true,
+    "tax_type_by_state": "Vendor and buyer GSTIN state codes equal -> CGST+SGST; different -> IGST. Wrong type -> HOLD (buyer cannot claim input tax credit).",
+    "invoice_before_po_date": "NEEDS_REVIEW"
+  },
+  "decision_levels": {
+    "order_of_severity": [
+      "REJECT",
+      "HOLD",
+      "NEEDS_REVIEW",
+      "APPROVE"
+    ],
+    "note": "The decision is the most severe level raised by any check. 'warn' and 'info' notes never change the decision."
+  }
+}

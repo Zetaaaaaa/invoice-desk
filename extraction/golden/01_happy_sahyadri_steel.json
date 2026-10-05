@@ -1,0 +1,132 @@
+{
+  "document": {
+    "document_type": "tax_invoice",
+    "document_quality": "digital",
+    "multiple_invoices_detected": false,
+    "annotations": []
+  },
+  "vendor": {
+    "name": {
+      "value": "Sahyadri Steel Traders",
+      "confidence": 0.98,
+      "evidence": "Sahyadri Steel Traders"
+    },
+    "gstin": {
+      "value": "27AAHFS5521K1ZQ",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAHFS5521K1ZQ"
+    },
+    "email": {
+      "value": "accounts@sahyadristeel.in",
+      "confidence": 0.98,
+      "evidence": "accounts@sahyadristeel.in"
+    },
+    "address": "Gat No. 112, Chakan Industrial Area, Pune, Maharashtra 410501"
+  },
+  "buyer": {
+    "name": {
+      "value": "Kestrel Components Pvt Ltd",
+      "confidence": 0.98,
+      "evidence": "Kestrel Components Pvt Ltd"
+    },
+    "gstin": {
+      "value": "27AAKCK4821M1Z3",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAKCK4821M1Z3"
+    }
+  },
+  "invoice": {
+    "number": {
+      "value": "SST/26-27/0318",
+      "confidence": 0.98,
+      "evidence": "SST/26-27/0318"
+    },
+    "date": {
+      "value": "2026-09-15",
+      "confidence": 0.98,
+      "evidence": "15-Sep-2026"
+    },
+    "due_date": "2026-10-30",
+    "po_reference": {
+      "value": "PO-2026-0101",
+      "confidence": 0.98,
+      "evidence": "PO No:: PO-2026-0101"
+    },
+    "other_references": [],
+    "currency": {
+      "value": "INR",
+      "confidence": 0.98,
+      "evidence": "₹"
+    }
+  },
+  "lines": [
+    {
+      "description": "TMT bars Fe500D 12mm",
+      "hsn_sac": "7214",
+      "quantity": 20,
+      "uom": "MT",
+      "unit_price": 14500.0,
+      "line_amount": 290000.0,
+      "confidence": 0.97
+    },
+    {
+      "description": "MS angle 40x40x5mm",
+      "hsn_sac": "7216",
+      "quantity": 8,
+      "uom": "MT",
+      "unit_price": 13750.0,
+      "line_amount": 110000.0,
+      "confidence": 0.97
+    }
+  ],
+  "tax": {
+    "treatment": "separate",
+    "inclusive_statement": null,
+    "tax_lines": [
+      {
+        "tax_type": "CGST",
+        "rate_pct": 9.0,
+        "amount": 36000.0
+      },
+      {
+        "tax_type": "SGST",
+        "rate_pct": 9.0,
+        "amount": 36000.0
+      }
+    ]
+  },
+  "totals": {
+    "subtotal": {
+      "value": 400000.0,
+      "confidence": 0.98,
+      "evidence": "Sub Total 4,00,000.00"
+    },
+    "total": {
+      "value": 472000.0,
+      "confidence": 0.98,
+      "evidence": "₹ 4,72,000.00"
+    },
+    "total_in_words": "Rupees Four Lakh Seventy Two Thousand Only"
+  },
+  "bank": {
+    "bank_name": {
+      "value": "Bank of Maharashtra, Chakan Branch",
+      "confidence": 0.98,
+      "evidence": "Bank of Maharashtra, Chakan Branch"
+    },
+    "account_number": {
+      "value": "60198423334417",
+      "confidence": 0.98,
+      "evidence": "A/c No: 60198423334417"
+    },
+    "ifsc": {
+      "value": "MAHB0001234",
+      "confidence": 0.98,
+      "evidence": "IFSC: MAHB0001234"
+    },
+    "change_notice": {
+      "detected": false,
+      "evidence": null
+    }
+  }
+}

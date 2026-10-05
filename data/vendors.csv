@@ -1,0 +1,7 @@
+vendor_id,vendor_name,aliases,gstin,state,city,payment_terms_days,bank_account_last4,contact_email,status,status_note
+V001,Sahyadri Steel Traders,Sahyadri Steel|SST,27AAHFS5521K1ZQ,Maharashtra,Pune,45,4417,accounts@sahyadristeel.in,active,
+V002,Brightline Logistics LLP,Brightline Logistics|Brightline,27AAKFB8834P1Z2,Maharashtra,Mumbai,30,9032,billing@brightlinelogistics.in,active,
+V003,Deccan Packaging Solutions,Deccan Packaging|DPS,27AAMFD2290L1Z8,Maharashtra,Pune,30,2268,accounts@deccanpack.in,active,
+V004,Orbit IT Services Pvt Ltd,Orbit IT Services|Orbit IT|OITS,29AACCO7716R1ZK,Karnataka,Bengaluru,30,7751,finance@orbitits.co.in,active,
+V005,Meridian Office Supplies,Meridian Office|Meridian,27AAPFM4473D1Z6,Maharashtra,Pune,15,3390,sales@meridianoffice.in,active,
+V006,Zenith Industrial Tools,Zenith Tools|ZIT,24AAECZ3318H1Z1,Gujarat,Ahmedabad,30,6084,ar@zenithtools.in,blocked,Bank details failed verification (Aug 2026)

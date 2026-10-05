@@ -1,0 +1,132 @@
+{
+  "document": {
+    "document_type": "tax_invoice",
+    "document_quality": "scan_clear",
+    "multiple_invoices_detected": false,
+    "annotations": [
+      "RECEIVED 26 SEP 2026 - KCPL (rubber stamp)",
+      "fwd to Sandeep - IT (handwritten)"
+    ]
+  },
+  "vendor": {
+    "name": {
+      "value": "Orbit IT Services Pvt Ltd",
+      "confidence": 0.98,
+      "evidence": "Orbit IT Services Pvt Ltd"
+    },
+    "gstin": {
+      "value": "29AACCO7716R1ZK",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 29AACCO7716R1ZK"
+    },
+    "email": {
+      "value": "finance@orbitits.co.in",
+      "confidence": 0.98,
+      "evidence": "finance@orbitits.co.in"
+    },
+    "address": "3rd Floor, Prestige Tech Park, Outer Ring Road, Bengaluru, Karnataka 560103"
+  },
+  "buyer": {
+    "name": {
+      "value": "Kestrel Components Pvt Ltd",
+      "confidence": 0.98,
+      "evidence": "Kestrel Components Pvt Ltd"
+    },
+    "gstin": {
+      "value": "27AAKCK4821M1Z3",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAKCK4821M1Z3"
+    }
+  },
+  "invoice": {
+    "number": {
+      "value": "OITS/KA/26-27/2291",
+      "confidence": 0.98,
+      "evidence": "OITS/KA/26-27/2291"
+    },
+    "date": {
+      "value": "2026-09-24",
+      "confidence": 0.98,
+      "evidence": "24 Sep 2026"
+    },
+    "due_date": null,
+    "po_reference": {
+      "value": null,
+      "confidence": 0.95,
+      "evidence": null
+    },
+    "other_references": [
+      "Your Ref: Email dt. 04-Sep-2026 (Mr. Sandeep)"
+    ],
+    "currency": {
+      "value": "INR",
+      "confidence": 0.98,
+      "evidence": "₹"
+    }
+  },
+  "lines": [
+    {
+      "description": "AMC - laptop fleet, 45 nos (Oct 2026 - Sep 2027)",
+      "hsn_sac": "9987",
+      "quantity": 45,
+      "uom": "Nos",
+      "unit_price": 3304.0,
+      "line_amount": 148680.0,
+      "confidence": 0.97
+    },
+    {
+      "description": "Network security audit & VAPT report",
+      "hsn_sac": "9983",
+      "quantity": 1,
+      "uom": "Job",
+      "unit_price": 40120.0,
+      "line_amount": 40120.0,
+      "confidence": 0.97
+    }
+  ],
+  "tax": {
+    "treatment": "inclusive",
+    "inclusive_statement": "All amounts are inclusive of IGST @ 18%",
+    "tax_lines": [
+      {
+        "tax_type": "IGST",
+        "rate_pct": 18.0,
+        "amount": null
+      }
+    ]
+  },
+  "totals": {
+    "subtotal": {
+      "value": null,
+      "confidence": 0.95,
+      "evidence": null
+    },
+    "total": {
+      "value": 188800.0,
+      "confidence": 0.98,
+      "evidence": "₹ 1,88,800.00"
+    },
+    "total_in_words": "Rupees One Lakh Eighty Eight Thousand Eight Hundred Only"
+  },
+  "bank": {
+    "bank_name": {
+      "value": "Axis Bank, Bellandur",
+      "confidence": 0.98,
+      "evidence": "Axis Bank, Bellandur"
+    },
+    "account_number": {
+      "value": "921020047557751",
+      "confidence": 0.98,
+      "evidence": "A/c No: 921020047557751"
+    },
+    "ifsc": {
+      "value": "UTIB0002841",
+      "confidence": 0.98,
+      "evidence": "IFSC: UTIB0002841"
+    },
+    "change_notice": {
+      "detected": false,
+      "evidence": null
+    }
+  }
+}

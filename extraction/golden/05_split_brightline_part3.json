@@ -1,0 +1,132 @@
+{
+  "document": {
+    "document_type": "tax_invoice",
+    "document_quality": "digital",
+    "multiple_invoices_detected": false,
+    "annotations": []
+  },
+  "vendor": {
+    "name": {
+      "value": "Brightline Logistics LLP",
+      "confidence": 0.98,
+      "evidence": "Brightline Logistics LLP"
+    },
+    "gstin": {
+      "value": "27AAKFB8834P1Z2",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAKFB8834P1Z2"
+    },
+    "email": {
+      "value": "billing@brightlinelogistics.in",
+      "confidence": 0.98,
+      "evidence": "billing@brightlinelogistics.in"
+    },
+    "address": "Unit 304, Transport Nagar, Kalamboli, Navi Mumbai, Maharashtra 410218"
+  },
+  "buyer": {
+    "name": {
+      "value": "Kestrel Components Pvt Ltd",
+      "confidence": 0.98,
+      "evidence": "Kestrel Components Pvt Ltd"
+    },
+    "gstin": {
+      "value": "27AAKCK4821M1Z3",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAKCK4821M1Z3"
+    }
+  },
+  "invoice": {
+    "number": {
+      "value": "BL/INV/2026/0902",
+      "confidence": 0.98,
+      "evidence": "BL/INV/2026/0902"
+    },
+    "date": {
+      "value": "2026-09-29",
+      "confidence": 0.98,
+      "evidence": "29-Sep-2026"
+    },
+    "due_date": null,
+    "po_reference": {
+      "value": "2026-0102",
+      "confidence": 0.98,
+      "evidence": "PO#: 2026-0102"
+    },
+    "other_references": [],
+    "currency": {
+      "value": "INR",
+      "confidence": 0.98,
+      "evidence": "₹"
+    }
+  },
+  "lines": [
+    {
+      "description": "FTL freight Pune to Chennai, 32ft MXL container (trips 17-21, 17 Sep - 28 Sep)",
+      "hsn_sac": "9965",
+      "quantity": 5,
+      "uom": "Trip",
+      "unit_price": 25000.0,
+      "line_amount": 125000.0,
+      "confidence": 0.97
+    },
+    {
+      "description": "Detention charges at Chennai consignee (6 vehicle-days)",
+      "hsn_sac": "9967",
+      "quantity": 6,
+      "uom": "Day",
+      "unit_price": 2500.0,
+      "line_amount": 15000.0,
+      "confidence": 0.97
+    }
+  ],
+  "tax": {
+    "treatment": "separate",
+    "inclusive_statement": null,
+    "tax_lines": [
+      {
+        "tax_type": "CGST",
+        "rate_pct": 9.0,
+        "amount": 12600.0
+      },
+      {
+        "tax_type": "SGST",
+        "rate_pct": 9.0,
+        "amount": 12600.0
+      }
+    ]
+  },
+  "totals": {
+    "subtotal": {
+      "value": 140000.0,
+      "confidence": 0.98,
+      "evidence": "Sub Total 1,40,000.00"
+    },
+    "total": {
+      "value": 165200.0,
+      "confidence": 0.98,
+      "evidence": "₹ 1,65,200.00"
+    },
+    "total_in_words": "Rupees One Lakh Sixty Five Thousand Two Hundred Only"
+  },
+  "bank": {
+    "bank_name": {
+      "value": "ICICI Bank, Kalamboli",
+      "confidence": 0.98,
+      "evidence": "ICICI Bank, Kalamboli"
+    },
+    "account_number": {
+      "value": "012305009032",
+      "confidence": 0.98,
+      "evidence": "A/c No: 012305009032"
+    },
+    "ifsc": {
+      "value": "ICIC0000123",
+      "confidence": 0.98,
+      "evidence": "IFSC: ICIC0000123"
+    },
+    "change_notice": {
+      "detected": false,
+      "evidence": null
+    }
+  }
+}

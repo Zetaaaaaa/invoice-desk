@@ -1,0 +1,150 @@
+{
+  "document": {
+    "document_type": "tax_invoice",
+    "document_quality": "digital",
+    "multiple_invoices_detected": false,
+    "annotations": []
+  },
+  "vendor": {
+    "name": {
+      "value": "Meridian Office Supplies",
+      "confidence": 0.98,
+      "evidence": "Meridian Office Supplies"
+    },
+    "gstin": {
+      "value": "27AAPFM4473D1Z6",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAPFM4473D1Z6"
+    },
+    "email": {
+      "value": "sales@meridianoffice.in",
+      "confidence": 0.98,
+      "evidence": "sales@meridianoffice.in"
+    },
+    "address": "Shop 7, Lakshmi Road, Sadashiv Peth, Pune, Maharashtra 411030"
+  },
+  "buyer": {
+    "name": {
+      "value": "Kestrel Components Pvt Ltd",
+      "confidence": 0.98,
+      "evidence": "Kestrel Components Pvt Ltd"
+    },
+    "gstin": {
+      "value": "27AAKCK4821M1Z3",
+      "confidence": 0.98,
+      "evidence": "GSTIN: 27AAKCK4821M1Z3"
+    }
+  },
+  "invoice": {
+    "number": {
+      "value": "MOS-2026-1187",
+      "confidence": 0.98,
+      "evidence": "MOS-2026-1187"
+    },
+    "date": {
+      "value": "2026-09-22",
+      "confidence": 0.98,
+      "evidence": "22-Sep-2026"
+    },
+    "due_date": null,
+    "po_reference": {
+      "value": "PO-2026-0106",
+      "confidence": 0.98,
+      "evidence": "Your Order Ref: PO-2026-0106"
+    },
+    "other_references": [],
+    "currency": {
+      "value": "INR",
+      "confidence": 0.98,
+      "evidence": "₹"
+    }
+  },
+  "lines": [
+    {
+      "description": "A4 copier paper 75 GSM",
+      "hsn_sac": "4802",
+      "quantity": 200,
+      "uom": "Ream",
+      "unit_price": 285.0,
+      "line_amount": 57000.0,
+      "confidence": 0.97
+    },
+    {
+      "description": "Toner cartridge HP 26A compatible",
+      "hsn_sac": "8443",
+      "quantity": 12,
+      "uom": "Nos",
+      "unit_price": 3450.0,
+      "line_amount": 41400.0,
+      "confidence": 0.97
+    },
+    {
+      "description": "Box files with clip",
+      "hsn_sac": "4820",
+      "quantity": 300,
+      "uom": "Nos",
+      "unit_price": 42.0,
+      "line_amount": 12600.0,
+      "confidence": 0.97
+    },
+    {
+      "description": "Courier & handling charges",
+      "hsn_sac": "9968",
+      "quantity": 1,
+      "uom": "Lot",
+      "unit_price": 1600.0,
+      "line_amount": 1600.0,
+      "confidence": 0.97
+    }
+  ],
+  "tax": {
+    "treatment": "separate",
+    "inclusive_statement": null,
+    "tax_lines": [
+      {
+        "tax_type": "CGST",
+        "rate_pct": 9.0,
+        "amount": 10134.0
+      },
+      {
+        "tax_type": "SGST",
+        "rate_pct": 9.0,
+        "amount": 10134.0
+      }
+    ]
+  },
+  "totals": {
+    "subtotal": {
+      "value": 112600.0,
+      "confidence": 0.98,
+      "evidence": "Sub Total 1,12,600.00"
+    },
+    "total": {
+      "value": 132868.0,
+      "confidence": 0.98,
+      "evidence": "₹ 1,32,868.00"
+    },
+    "total_in_words": "Rupees One Lakh Thirty Two Thousand Eight Hundred Sixty Eight Only"
+  },
+  "bank": {
+    "bank_name": {
+      "value": "HDFC Bank, Tilak Road",
+      "confidence": 0.98,
+      "evidence": "HDFC Bank, Tilak Road"
+    },
+    "account_number": {
+      "value": "50200077113390",
+      "confidence": 0.98,
+      "evidence": "A/c No: 50200077113390"
+    },
+    "ifsc": {
+      "value": "HDFC0000456",
+      "confidence": 0.98,
+      "evidence": "IFSC: HDFC0000456"
+    },
+    "change_notice": {
+      "detected": false,
+      "evidence": null
+    }
+  }
+}

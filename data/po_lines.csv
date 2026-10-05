@@ -1,0 +1,14 @@
+po_number,line_no,item_description,hsn_sac,quantity,uom,unit_price,line_amount
+PO-2026-0101,1,TMT bars Fe500D 12mm,7214,20,MT,14500,290000
+PO-2026-0101,2,MS angle 40x40x5mm,7216,8,MT,13750,110000
+PO-2026-0102,1,FTL freight Pune to Chennai 32ft MXL container,9965,20,Trip,25000,500000
+PO-2026-0103,1,Corrugated boxes 5-ply 600x400x400mm,4819,2000,Nos,38,76000
+PO-2026-0103,2,Stretch wrap film 500mm x 23 micron,3920,50,Roll,620,31000
+PO-2026-0104,1,Annual maintenance contract - laptops (45 units),9987,45,Unit,2800,126000
+PO-2026-0104,2,Network security audit (one-time),9983,1,Job,34000,34000
+PO-2026-0105,1,Microsoft 365 Business Standard annual licence,9973,60,Seat,1950,117000
+PO-2026-0106,1,A4 copier paper 75 GSM,4802,200,Ream,285,57000
+PO-2026-0106,2,Toner cartridge HP 26A compatible,8443,12,Nos,3450,41400
+PO-2026-0106,3,Box files with clip,4820,300,Nos,42,12600
+PO-2026-0107,1,Carbide turning inserts CNMG 120408,8209,200,Nos,425,85000
+PO-2026-0108,1,MS plate 10mm IS2062 E250,7208,10,MT,25000,250000
